@@ -2,7 +2,6 @@ package fuga.app.invaderdetector.components.detector;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
@@ -127,21 +126,6 @@ public class SpaceInvaderDetector {
 	 * @return True if 'o' is noise, False if 'o' is junk
 	 */
 	private boolean isNoise(final Matrix invaderMatrix, final int x, final int y) {
-
-//		int startPositionX = (x - 1 >= 0) ? x - 1: x;
-//		int endPositionX = (x + 1 < invaderMatrix.getHeight()) ? x + 1: x;
-//
-//		int startPositionY = (y - 1 >= 0) ? y - 1: y;
-//		int endPositionY = (y + 1 < invaderMatrix.getWidth()) ? y + 1: y;
-//
-//
-//		for (int rowNum = startPositionX; rowNum <= endPositionX; rowNum++) {
-//			for (int colNum = startPositionY; colNum <= endPositionY; colNum++) {
-//				if (invaderMatrix.getElements()[rowNum][colNum] == MATCHING_CHAR && rowNum != x && colNum != y) {
-//
-//				}
-//			}
-//		}
 
 		//Check if point is not located in last row of matrix
 		if (x + 1 < invaderMatrix.getHeight()) {
